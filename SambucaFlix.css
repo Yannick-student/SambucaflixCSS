@@ -1,0 +1,109 @@
+/* Disclaimer container */
+#loginPage .loginDisclaimerContainer {
+  background-color: rgba(0, 255, 0, 0.1); /* Light green background */
+  border: 2px solid #008000; /* Greenborder */
+  border-radius: 10px;
+  padding: 0.6em;
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: #008000;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+/* Centered login form with rounded corners and shadow */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  padding: 2em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#loginPage {
+    background: url('https://i.imgur.com/Ewk3Pqw.png') !important;
+    background-size: cover !important;
+}
+
+/* Hide default heading */
+#loginPage h1 {
+  display: none;
+}
+
+/* Custom welcome message */
+#loginPage .padded-left.padded-right.padded-bottom-page::before {
+  content: "Welcome to SambucaFlix";
+  display: block;
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+/* Custom author message */
+#loginPage .padded-left.padded-right.padded-bottom-page::after {
+  content: "By Yannick, powered by Jellyfin. Sponsored by Elmar <3";
+  display: block;
+  font-size: 0.8em;
+  color: #cccccc;
+  margin-top: 0.5em;
+}
+
+/* Style input fields */
+#loginPage input {
+  border-radius: 8px;
+  padding: 0.5em;
+  border: none;
+  margin-bottom: 0.3em;
+  width: 100%;
+}
+
+/* Style login buttons */
+#loginPage .emby-button {
+  border-radius: 8px;
+  padding: 0.75em 1.5em;  /* Increased padding for a more modern look */
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1em;  /* Added space between buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+}
+
+#loginPage .emby-button:hover {
+  background-color: #357ab8;
+  transform: translateY(-2px); /* Slight hover lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+#loginPage .emby-button:active {
+  transform: translateY(1px); /* Button press effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow on click */
+}
+
+#loginPage .raised.cancel.block.btnQuick.emby-button {
+  display: none !important;
+}
+
+/* Rounded corners for content cards */
+.cardContent,
+.paperList .listItem {
+  border-radius: 15px !important;
+}
+
+.cardPadder-overflowBackdrop {
+  border-radius: 1em !important;
+}
+
+.cardOverlayContainer {
+  border-radius: 1em !important;
+}
+
+.cardPadder {
+  border-radius: 1em !important;
+}
+
+.backgroundContainer {
+    background: url('https://i.imgur.com/Ewk3Pqw.png') !important;
+    background-size: cover !important;
+}
