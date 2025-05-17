@@ -1,0 +1,110 @@
+/* Narrow the login form */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+/* #loginPage h1 {
+  display: none;
+} */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 50px;
+}
+
+/* Hide "manual" and "forgot" buttons */
+/* #loginPage .raised.cancel.block.btnManual.emby-button {
+  display: none;
+} */
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none;
+}
+
+#loginPage .raised.cancel.block.btnQuick.emby-button {
+  display: none !important;
+}
+
+/* .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: none;
+  background-color: rgba(0, 0, 0, 0);
+} */
+
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred,
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
+  background: rgba(255, 255, 255, 0.05); /* Light frosted look */
+  backdrop-filter: blur(10px);         /* The actual glass blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle glassy border */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);         /* Soft shadow for depth */
+}
+
+.backdropImage {
+  display: none;
+}
+
+.backgroundContainer {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('https://images.pexels.com/photos/301669/pexels-photo-301669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  filter: blur(10px) brightness(0.25);
+  background-size: cover;
+}
+
+.cardContent-button,
+.itemDetailImage {
+  border-radius: 0.25em;
+}
+
+/* Adjust both "size-adjust" and "size" to modify size */
+.headerTabs.sectionTabs {
+  text-size-adjust: 110%;
+  font-size: 110%;
+}
+.pageTitle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.emby-tab-button {
+  /* padding: 1.75em 1.7em; */
+  padding: 0.8em 1.7em;
+}
+
+.cardContent,
+.paperList .listItem {
+  border-radius: 15px !important;
+}
+
+.cardPadder-overflowBackdrop {
+  border-radius: 1em !important;
+}
+
+.cardOverlayContainer {
+  border-radius: 1em !important;
+}
+
+.cardPadder {
+  border-radius: 1em !important;
+}
+
+#loginPage h1 {
+  display: none;
+}
+
+/* Custom welcome message */
+#loginPage .padded-left.padded-right.padded-bottom-page::before {
+  content: "Welcome to SambucaFlix";
+  text-align: center;
+  display: block;
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 0.7em;
+  font-weight: bold;
+}
+
+#loginPage .loginDisclaimerContainer {
+opacity: 0.5;
+}
